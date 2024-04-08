@@ -16,11 +16,6 @@ security:
             lazy: true
             provider: users_in_memory
 
-            # activate different ways to authenticate
-            # https://symfony.com/doc/current/security.html#the-firewall
-
-            # https://symfony.com/doc/current/security/impersonating_user.html
-            # switch_user: true
             json_login:
                 provider: users_in_memory
                 check_path: /api/login_check
