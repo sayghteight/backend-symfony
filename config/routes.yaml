@@ -11,3 +11,23 @@ app_api_getrss:
     path: /api/getRSS
     controller: 'App\Controller\ApiRSSController::index'
     methods: [GET]
+
+app_api_find:
+    path: /api/find/{id}
+    controller: 'App\Controller\ApiRSSController::find'
+    methods: [GET]
+
+app_api_create_rss:
+    path: /api/create
+    controller: 'App\Controller\ApiRSSController::create'
+    methods: [POST]
+
+app_api_update_rss:
+    path: /api/update/{id}
+    controller: 'App\Controller\ApiRSSController::update'
+    methods: [PUT]
+
+app_api_delete_rss:
+    path: /api/delete/{id}
+    controller: 'App\Controller\ApiRSSController::delete'
+    methods: [DELETE]
